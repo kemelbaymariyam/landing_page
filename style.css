@@ -1,5 +1,6 @@
  * {
     font-family: Roboto, sans-serif ;
+    /* flex-wrap: wrap; didnt work for some reason */
 }
 
  
@@ -113,3 +114,9 @@ ul {
     font-weight: 900;
 
 }
+
+/*///////////////////////content/////////////////////////*/
+.container {
+    display: flex;
+}
+
