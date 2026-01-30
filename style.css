@@ -195,3 +195,45 @@ ul {
     font-weight: 900;
     align-self: flex-end;
 }
+/*//////////////////////last section/////////////////////////////*/
+.last-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+.pop-up {
+    background-color: #3882F6;
+    display: flex;
+    padding: 30px 60px 30px 60px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+#pop-up-title {
+    font-size: 19px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+#pop-up-text {
+    font-size: 16px;
+    color: #F9FAF8;
+}
+#pop-up-button {
+  background-color: #3882F6; 
+  color: #F9FAF8;
+  padding: 14px 28px;
+  border: 1px solid;
+  border-color: #F9FAF8;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.pop-up-right, .pop-up-left {
+    flex: 1;
+}
+.pop-up-right {
+    display: flex;
+    align-content: flex-end;
+}
