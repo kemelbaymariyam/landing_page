@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     margin: 0px;
+    justify-content: stretch;
  }
  /*/////////////////////hero//////////////////*/
 
@@ -116,7 +117,81 @@ ul {
 }
 
 /*///////////////////////content/////////////////////////*/
-.container {
+.content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.pics-texts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+ .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    align-items: center;
+ }
+ .image-wrapper {
+    width:250px; /*may have to  add overflow*/
+    overflow: hidden;
+ }
+.small-img {
+    width: 250px; /*maybe have  to  change to%*/
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
+#content-main {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.content-text {
+    text-align: center;
+    opacity: 0.7;
+}
+/*////////////////////////////grey-area////////////////////////*/
+
+.grey-area {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+.grey-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left:  100px;
+    margin-right: 100px;
+
+}
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    color: #1F2937;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 16px;
+    
+}
+.author {
+    font-size: 18px;
+    font-weight: 900;
+    align-self: flex-end;
+}
