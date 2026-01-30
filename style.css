@@ -1,52 +1,97 @@
+ * {
+    font-family: Roboto, sans-serif ;
+}
+
+ 
  body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
  }
  /*/////////////////////hero//////////////////*/
 
 .hero{
-    padding: 20px 300px 60px 300px;
     background-color: #1F2937;
  }
 
  .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
  }
-
+ #hero-logo, .header-right {
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+ #hero-logo {
+    padding-right: 150px;
+ }
  .hero-bottom {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 100px 60px 100px;
  }
 
  .hero-left, .hero-right {
     flex: 1;
+    max-width: 450px;
  }
 
-#image {
-    color: #F9FAF8;
-    background-color: grey;
-    width: 680px;
-    font-size: 18px;
+#image { /* div*/
     display: flex;
     justify-content: center;
     align-items: centers;
     flex: 1 1 auto;
+    padding-top: 45px;
+    padding-bottom: 25px;
  }
+.emergency-image { /*img*/
+    width: 300px;
+    height: auto;
+}
 
 ul {
     display: flex;
     gap: 10px;
     padding: 0px;
     margin: 0px;
+    padding-left: 0px;
  }
 
  li {
     list-style: none;
-    color: #F9FAF8;
+    color: #e5e7eb;
  }
+/*
+.donate-button {
+    border-radius: 15px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 20px 10px 20px;
+    margin-top: 25px;
+} */
 
+.donate-button {
+  background-color: #3882F6; 
+  color: #F9FAF8;
+  margin-top: 25px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
 
+.donate-button:hover {
+  background-color: #2f6fd6;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+.donate-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 
  /* ///////////////////font color///////////////////////*/
@@ -54,16 +99,17 @@ ul {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0px;
  }
 #hero-secondary-text {
     font-size: 18px;
-    color: #F9FAF8;
+    color: #e5e7eb;
 }
 #hero-logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
 
-}
-html {
-    font-family: 'Roboto', sans-serif ;
 }
